@@ -1,5 +1,5 @@
 {
-.appVersion = "1352";
+.appVersion = "3414";
 DisplayStrings = (
 "01020304050607080910121314151617181920212223242526\0126272829\01251525354555657585950",
 "rouge/space Rouge/space 05/space ªº\012\012es/space la/space 1ª/space minimun/space 2º/space no",
@@ -10,7 +10,9 @@ DisplayStrings = (
 "nnnnnnn\012oooooo\012nn/Placeholder no/Placeholder oo\012abcdefghijklmnopqrstuvwxyz",
 "My/space Darling,\012I/space feel/space that/space this/space letter/space must/space start/space with/space apologies./space First/space for/space the/space letter/space written/space on/space Monday/space not/space being/space good/space till/space this/space afternoon,/space to/space the/space fact/space that/space couldn/quoteright t/space not/space get/space a/space stamp./space Second,/space for/space this/space paper,/space I/space still/space have/space not/space managed/space downtown/space for/space paper./space I/space hope/space tomorrow/space I/space will/space manage/space to/space rectify/space this.\012How/space lovely/space and/space sincere/space were/space your/space letters/space and/space how/space many/space times/space have/space I/space read/space them,/space each/space time/space finding/space some/space new/space delight/space and/space even/space going/space happiness/space yes,/space they/space have/space vanished/space the/space word/space around/space us.\012\012minimun/space amada/space mia/space manada/space nimiedad/space dame/space alameda/space alojamiento/space hijo/space volatil\012mentar/space amontonar/space camada/space hamaca/space ancla\012anana/space anormal/space andamiaje/space",
 "/Tbar",
-"nn/Placeholder no/Placeholder oo\012abcdefghijklmnopqrstuvwxyz"
+"nn/Placeholder no/Placeholder oo\012abcdefghijklmnopqrstuvwxyz",
+"1234568",
+"/C.calt C"
 );
 classes = (
 {
@@ -37,29 +39,20 @@ nbspace
 );
 },
 {
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
+name = "Use Typo Metrics";
+value = 1;
 },
 {
 name = license;
 value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 },
 {
+name = licenseURL;
+value = "https://scripts.sil.org/OFL";
+},
+{
 name = vendorID;
 value = GOOG;
-},
-{
-name = "Use Typo Metrics";
-value = 1;
-},
-{
-name = Axes;
-value = (
-{
-Name = Weight;
-Tag = wght;
-}
-);
 }
 );
 date = "2021-06-30 00:38:23 +0000";
@@ -105,7 +98,7 @@ code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfem
 name = ordn;
 },
 {
-code = "sub h by h.calt;\012sub n' r by n.calt;\012sub s by s.calt;\012sub six by six.calt;\012";
+code = "# Mid outstroke glyphs\012sub [c e i x m.calt n.calt] h' by h.calt;\012\012# Mid instroke glyphs\012sub [m n]' [b c h i j k l m n o p r s u v w x y] by [m.calt n.calt];\012\012# Needs further tucking in\012sub C' [g q] by C.calt;\012\012# I just can't get these two to work with anything\012\012#sub s by s.calt;\012#sub six by six.calt;\012";
 name = calt;
 },
 {
@@ -117,6 +110,10 @@ name = case;
 automatic = 1;
 code = "lookupflag IgnoreMarks;\012sub f f i by f_f_i;\012sub f f l by f_f_l;\012sub f f by f_f;\012sub f i by fi;\012sub f l by fl;\012";
 name = liga;
+},
+{
+code = "sub C by C.calt;\012sub h by h.calt;\012sub m by m.calt;\012sub n by n.calt;\012sub s by s.calt;\012sub six by six.calt;";
+name = salt;
 }
 );
 fontMaster = (
@@ -9256,14 +9253,16 @@ unicode = 0048;
 {
 color = 3;
 glyphname = Hbar;
-lastChange = "2021-08-13 03:09:10 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = H;
 },
 {
+alignment = -1;
 name = emdash;
 transform = "{1, 0, 0, 1, 587, 176}";
 }
@@ -27331,7 +27330,7 @@ unicode = 0125;
 {
 color = 4;
 glyphname = i;
-lastChange = "2021-08-13 03:17:29 +0000";
+lastChange = "2026-11-13 14:47:05 +0000";
 layers = (
 {
 anchors = (
@@ -33709,7 +33708,7 @@ unicode = 0071;
 {
 color = 4;
 glyphname = r;
-lastChange = "2021-08-13 03:17:29 +0000";
+lastChange = "2026-11-13 14:35:50 +0000";
 layers = (
 {
 anchors = (
@@ -38054,7 +38053,7 @@ unicode = 017C;
 {
 color = 3;
 glyphname = h.calt;
-lastChange = "2021-08-12 15:22:57 +0000";
+lastChange = "2026-11-13 14:33:51 +0000";
 layers = (
 {
 layerId = "E8487A59-2E36-4739-8DF2-414A9818920F";
@@ -38360,7 +38359,7 @@ nodes = (
 );
 }
 );
-width = 405;
+width = 283;
 }
 );
 note = h.1;
@@ -43756,11 +43755,12 @@ width = 538;
 {
 color = 0;
 glyphname = zero.lf;
-lastChange = "2021-07-28 12:22:44 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = zero;
 }
 );
@@ -43772,11 +43772,12 @@ width = 285;
 {
 color = 0;
 glyphname = one.lf;
-lastChange = "2021-07-28 12:22:44 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = one;
 }
 );
@@ -43788,11 +43789,12 @@ width = 433;
 {
 color = 0;
 glyphname = two.lf;
-lastChange = "2021-07-28 12:22:44 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = two;
 }
 );
@@ -43804,11 +43806,12 @@ width = 640;
 {
 color = 0;
 glyphname = three.lf;
-lastChange = "2021-07-28 12:22:44 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = three;
 }
 );
@@ -43820,11 +43823,12 @@ width = 481;
 {
 color = 0;
 glyphname = four.lf;
-lastChange = "2021-07-28 12:22:44 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = four;
 }
 );
@@ -43836,11 +43840,12 @@ width = 546;
 {
 color = 0;
 glyphname = five.lf;
-lastChange = "2021-07-28 12:22:44 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = five;
 }
 );
@@ -43852,11 +43857,12 @@ width = 337;
 {
 color = 0;
 glyphname = six.lf;
-lastChange = "2021-07-28 12:22:44 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = six;
 }
 );
@@ -43868,11 +43874,12 @@ width = 406;
 {
 color = 0;
 glyphname = seven.lf;
-lastChange = "2021-07-28 12:22:44 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = seven;
 }
 );
@@ -43884,11 +43891,12 @@ width = 331;
 {
 color = 0;
 glyphname = eight.lf;
-lastChange = "2021-07-28 12:22:44 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = eight;
 }
 );
@@ -43900,11 +43908,12 @@ width = 366;
 {
 color = 0;
 glyphname = nine.lf;
-lastChange = "2021-07-28 12:22:44 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = nine;
 }
 );
@@ -79522,14 +79531,16 @@ width = 211;
 {
 color = 3;
 glyphname = circumflexcomb_acutecomb.case;
-lastChange = "2021-07-28 11:26:31 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = circumflexcomb.case;
 },
 {
+alignment = -1;
 name = acutecomb.case;
 transform = "{1, 0, 0, 1, 85, 115}";
 }
@@ -79562,14 +79573,16 @@ width = 237;
 {
 color = 3;
 glyphname = circumflexcomb_hookabovecomb.case;
-lastChange = "2021-07-28 11:26:34 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = circumflexcomb.case;
 },
 {
+alignment = -1;
 name = hookabovecomb.case;
 transform = "{1, 0, 0, 1, 205, 79}";
 }
@@ -79582,14 +79595,16 @@ width = 237;
 {
 color = 3;
 glyphname = circumflexcomb_tildecomb.case;
-lastChange = "2021-07-28 11:26:52 +0000";
+lastChange = "2026-11-13 14:29:22 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = circumflexcomb.case;
 },
 {
+alignment = -1;
 name = tildecomb.case;
 transform = "{1, 0, 0, 1, 61, 125}";
 }
@@ -82442,6 +82457,10 @@ x = 32;
 y = 16;
 z = 43;
 };
+s.calt = {
+i = -211;
+r = -210;
+};
 seven = {
 zero = 150;
 };
@@ -82621,5 +82640,5 @@ manufacturer = "Robert E. Leuschke";
 manufacturerURL = www.typesetit.com;
 unitsPerEm = 1000;
 versionMajor = 1;
-versionMinor = 5;
+versionMinor = 6;
 }
